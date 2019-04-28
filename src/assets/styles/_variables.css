@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  background: #f7f7f7;
+  font-family: "Montserrat";
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mainBlueBg{
+  background-color:  #1653bf
+}

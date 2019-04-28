@@ -1,0 +1,6 @@
+/* NavBar */
+.ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
+    color: #1890ff;
+    border-bottom: 2px solid #95b71d
+     /* #1890ff; */
+}
