@@ -38,3 +38,34 @@
   width: 100%;
   height: auto;
 }
+
+/* Jati JatiDescription */
+.jatiDescriptionSection {
+  height: 100vh;
+}
+
+.pd50 {
+  padding: 50px
+}
+
+.titles-description {
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 25px 0px;
+}
+
+.pdTopBtn20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.txtFontSize {
+  font-size: 1.01rem
+}
+/* Why Jati */
+
+/* New Events */
+
+/* Respaldo */
+
+/* Contactanos */

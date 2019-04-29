@@ -13,20 +13,18 @@ const HomeCarousel = () => {
       slidesToShow = '1'
       slidesToScroll= '1'
       className = 'sliderSection'
-      slidesToShow = '1'
-      slidesToScroll = '1'
       >
       <div>
-        <img src={slider1} className='carousel-img'/>
+        <img src={slider1} className='carousel-img' alt='sliderImg' />
       </div>
       <div>
-        <img src={slider1} className='carousel-img' />
+        <img src={slider1} className='carousel-img' alt='sliderImg' />
       </div>
       <div>
-        <img src={slider1} className='carousel-img'/>
+        <img src={slider1} className='carousel-img' alt='sliderImg' />
       </div>
       <div>
-        <img src={slider1} className='carousel-img'/>
+        <img src={slider1} className='carousel-img' alt='sliderImg' />
       </div>
   </Carousel>
   )

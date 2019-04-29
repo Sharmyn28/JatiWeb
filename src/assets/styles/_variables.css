@@ -11,5 +11,9 @@ body {
 }
 
 .mainBlueBg{
-  background-color:  #1653bf
+  background-color:  #1653bf;
+}
+
+.txtBlue {
+  color: #1653bf;
 }

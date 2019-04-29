@@ -3,6 +3,8 @@ import { Layout, Menu, Row, Col, Avatar } from 'antd';
 import "antd/dist/antd.css"
 import '../assets/styles/_variables.css'
 import  '../assets/styles/_home.css'
+
+//import components for view
 import HomeCarousel from '../components/Carousel'
 import JatiDescription from '../components/JatiDescription'
 import WhyJati from '../components/whyJati'
@@ -10,6 +12,7 @@ import NewsEvents from '../components/newsEvents'
 import Respaldo from '../components/Respaldo'
 import Contact from '../components/Contact'
 
+//import images
 import logoJati from  '../assets/images/home/Jati-Logo.png'
 import map from '../assets/images/home/Seccion1-map.png'
 
@@ -43,16 +46,14 @@ const HomeLayout = () => {
 
       <Content >
         <HomeCarousel />
-        <img src={map} className='img--responsive' />
+        <img src={map} className='img--responsive' alt ='mapJati' />
         <div style={{ padding: '0 50px' }}>
           <JatiDescription  />
           <WhyJati />
-
           <NewsEvents />
           <Respaldo />
           <Contact />
         </div>
-        // <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
       </Content>
 
       <Footer style={{ textAlign: 'center' }}>
