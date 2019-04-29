@@ -19,16 +19,16 @@ const HomeLayout = () => {
   return (
     <Layout className="layout">
 
-      <Header className='mainBlueBg'>
+      <Header className='mainBlueBg header'>
         <Row>
           <Col xs={10} sm={10} md={6} lg={6} xl={6}>
-            <Avatar src={logoJati} style={{width: '55px', height: '55px'}} />
+            <Avatar src={logoJati} style={{width: '80px', height: '80px'}} />
           </Col>
           <Col xs={14} sm={14} md={18} lg={18} xl={18}>
             <Menu
               mode="horizontal"
               defaultSelectedKeys={['1']}
-              style={{ lineHeight: '64px', float: 'right', color: 'white' }}
+              style={{ lineHeight: '76px', float: 'right', color: '#fff' }}
               className = 'mainBlueBg'
             >
               <Menu.Item key="1">CONOCENOS</Menu.Item>
@@ -41,16 +41,18 @@ const HomeLayout = () => {
         </Row>
       </Header>
 
-      <Content style={{ padding: '0 50px' }}>
+      <Content >
         <HomeCarousel />
-        <img src={map} />
-        <JatiDescription />
-        <WhyJati />
+        <img src={map} className='img--responsive' />
+        <div style={{ padding: '0 50px' }}>
+          <JatiDescription  />
+          <WhyJati />
 
-        <NewsEvents />
-        <Respaldo />
-        <Contact />
-        <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
+          <NewsEvents />
+          <Respaldo />
+          <Contact />
+        </div>
+        // <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
       </Content>
 
       <Footer style={{ textAlign: 'center' }}>

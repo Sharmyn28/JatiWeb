@@ -1,7 +1,12 @@
+/* Header */
+.header {
+  height: 80px;
+}
+
 /* NavBar */
 .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
     color: #95b71d;
-    border-bottom: 3px solid #95b71d; /* 1890ff */
+    border-bottom: 5px solid #95b71d; /* 1890ff */
     font-weight: bold;
 
 }
@@ -11,3 +16,25 @@
    border-bottom: 3px solid #95b71d; /* 1890ff    #eee430*/
    font-weight: bold;
  }
+
+/*Carousel*/
+.sliderSection {
+  /* height: 100vh; */
+  background: #133164;
+}
+
+.carousel-img {
+  /* height: 100vh; */
+  width: 100%;
+  height: auto;
+}
+
+.ant-carousel .slick-dots {
+  bottom: 50px;
+}
+
+/* Section Map*/
+.img--responsive {
+  width: 100%;
+  height: auto;
+}
