@@ -41,7 +41,7 @@
 
 /* Jati JatiDescription */
 .jatiDescriptionSection {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .pd50 {
@@ -62,7 +62,52 @@
 .txtFontSize {
   font-size: 1.01rem
 }
+
+.images-maxH {
+  max-height: 475px;
+}
 /* Why Jati */
+.whyJatiSection {
+  background-color: #1653bf;
+  height: 100vh;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.whyJatiSection h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  padding: 0px 15px;
+  margin-top: 100px;
+}
+
+.col-itemBox {
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  min-height: 350px;
+  padding: 20px;
+  margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.whyJatiSection img {
+  margin: 15px 0;
+}
+
+.subtitle-p {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+}
+
+.col-itemBox-txt {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 25px;
+}
+
 
 /* New Events */
 
