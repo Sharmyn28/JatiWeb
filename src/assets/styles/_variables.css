@@ -22,6 +22,14 @@ body {
   color: #fff;
 }
 
-.mtop80{
+.txtGreen {
+  color: #95b71d;
+}
+
+.mtop80 {
   margin-top: 80px;
+}
+
+.bold {
+  font-weight: bold;
 }
