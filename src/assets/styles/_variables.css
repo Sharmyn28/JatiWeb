@@ -33,3 +33,7 @@ body {
 .bold {
   font-weight: bold;
 }
+
+.txtGrey {
+  color: #858585;
+}

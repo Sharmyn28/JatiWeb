@@ -47,10 +47,10 @@ const HomeLayout = () => {
       <Content >
         <HomeCarousel />
         <img src={map} className='img--responsive' alt ='mapJati' />
+        <JatiDescription  />
+        <WhyJati />
+        <NewsEvents />
         <div style={{ padding: '0 50px' }}>
-          <JatiDescription  />
-          <WhyJati />
-          <NewsEvents />
           <Respaldo />
           <Contact />
         </div>
