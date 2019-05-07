@@ -11,7 +11,7 @@ const SolarDecathlon = () => {
     <div>
       <Row>
         <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-          <img className='img--responsive' src={solar} alt='SolarDecathlon'/>
+          <img className='img--responsive images-maxH' src={solar} alt='SolarDecathlon'/>
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={12} className='pd50'>
           <h2 className='titles-description txtBlue'> ¿Qué es el Solar Decathlon? </h2>
@@ -38,7 +38,7 @@ const Jati = () => {
           <Button type='primary' size='large' className='mainBlueBg txtFontSize'>Seguir Leyendo</Button>
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-          <img className='img--responsive' src={jati} alt='JatiDescription'/>
+          <img className='img--responsive images-maxH' src={jati} alt='JatiDescription'/>
         </Col>
       </Row>
     </div>
