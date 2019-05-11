@@ -50,10 +50,8 @@ const HomeLayout = () => {
         <JatiDescription  />
         <WhyJati />
         <NewsEvents />
-        <div style={{ padding: '0 50px' }}>
-          <Respaldo />
-          <Contact />
-        </div>
+        <Respaldo />
+        <Contact />
       </Content>
 
       <Footer style={{ textAlign: 'center' }}>

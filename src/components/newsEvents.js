@@ -7,7 +7,7 @@ import news from '../assets/images/home/description/Seccion2-img1.png'
 
 const News = () => {
   return (
-    <div>
+    <div className='newSection'>
       <Col xs={24} sm={24} md={14} lg={14} xl={14}>
         <h3 className='txt-center txtBlue bold subtitle-Events'> Noticias </h3>
         <Col xs={10} sm={10} md={{span: 6, offset: 4}} lg={{span: 6, offset: 4}} xl={{span: 6, offset: 4}}>
@@ -24,7 +24,7 @@ const News = () => {
 
 const Events = () => {
   return  (
-    <div>
+    <div className='eventSection'>
       <Col xs={24} sm={24} md={10} lg={10} xl={10}>
         <h3 className='txtBlue bold subtitle-Events'> Eventos </h3>
         <Col xs={24} sm={24} md={18} lg={18} xl={18}>

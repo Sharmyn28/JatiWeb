@@ -11,15 +11,15 @@ const ReasonsJati = () => {
   return (
     <div className='mtop80'>
       <Row>
-        <Col xs={{ span: 22, offset: 1 }} sm= {{span: 22, offset: 1}} md={{span: 4, offset: 4}} lg={{span: 4, offset: 4}}  className='col-itemBox'>
+        <Col xs={{ span: 18, offset: 3 }} sm= {{span: 18, offset: 3}} md={{span: 5, offset: 2}} lg={{span: 4, offset: 4}}  className='col-itemBox'>
           <img className='img--responsive'  src={teamIcon} alt='teamIcon' />
           <p className='col-itemBox-txt'> UN EQUIPO MULTI DISCIPLINARIO </p>
         </Col>
-        <Col  xs={{ span: 22, offset: 1 }} sm= {{span: 22, offset: 1}} md={{span: 4, offset: 2}} lg={{span: 4, offset: 2}} className='col-itemBox'>
+        <Col  xs={{ span: 18, offset: 3 }} sm= {{span: 18, offset: 3}} md={{span: 5, offset: 2}} lg={{span: 4, offset: 2}} className='col-itemBox'>
           <img className='img--responsive' src={peruvianFlagIcon} alt='flagIcon' />
           <p className='col-itemBox-txt'> UNICO EQUIPO PERUANO ENTRE LOS FINALISTAS </p>
         </Col>
-        <Col  xs={{ span: 22, offset: 1 }} sm= {{span: 22, offset: 1}} md={{span: 4, offset: 2}} lg={{span: 4, offset: 2}} className='col-itemBox'>
+        <Col  xs={{ span: 18, offset: 3 }} sm= {{span: 18, offset: 3}} md={{span: 5, offset: 2}} lg={{span: 4, offset: 2}} className='col-itemBox'>
           <img className='img--responsive' src={buildingIcon} alt='houseIcon' />
           <p className='col-itemBox-txt'> CONSTRUYENDO PARA LAS FAMILIAS PERUANAS </p>
         </Col>

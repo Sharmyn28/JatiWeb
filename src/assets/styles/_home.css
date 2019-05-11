@@ -5,17 +5,16 @@
 
 /* NavBar */
 .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
-    color: #95b71d;
-    border-bottom: 5px solid #95b71d; /* 1890ff */
-    font-weight: bold;
-
+  color: #95b71d;
+  border-bottom: 5px solid #95b71d; /* 1890ff */
+  font-weight: bold;
 }
 
- .ant-menu-horizontal > .ant-menu-item:hover {
-   color: #95b71d;
-   border-bottom: 3px solid #95b71d; /* 1890ff    #eee430*/
-   font-weight: bold;
- }
+.ant-menu-horizontal > .ant-menu-item:hover {
+  color: #95b71d;
+  border-bottom: 3px solid #95b71d; /* 1890ff    #eee430*/
+  font-weight: bold;
+}
 
 /*Carousel*/
 .sliderSection {
@@ -66,6 +65,7 @@
 .images-maxH {
   max-height: 475px;
 }
+
 /* Why Jati */
 .whyJatiSection {
   background-color: #1653bf;
@@ -109,7 +109,6 @@
   margin-top: 25px;
 }
 
-
 /* New Events */
 .NewsEventsSection {
   background: #fff;
@@ -145,7 +144,7 @@
 
 /* Respaldo */
 .respaldoSection {
-  padding: 50px 0;
+  padding: 50px;
 }
 
 .respaldoSlider {
@@ -153,3 +152,139 @@
 }
 
 /* Contactanos */
+.contactSection {
+  background: #1653bf;
+  padding: 50px 0;
+}
+
+.complete-center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm {
+  padding: 30px 0;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 30px 0;
+}
+
+
+/* Media Querys */
+
+@media (max-width: 1024px) {
+  .pd50 {
+    padding: 30px 25px;
+  }
+
+  .titles-description {
+    margin: 10px 0;
+  }
+
+  .pdTopBtn20 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .txtFontSize {
+    font-size: 0.9rem;
+  }
+
+  /* whyJati */
+
+  .whyJatiSection {
+    height: auto;
+    padding: 70px 0;
+  }
+
+  .whyJatiSection h1 {
+    font-size: 2.1rem;
+    margin-bottom: 30px;
+    padding: 0px 15px;
+    margin-top: 0px;
+  }
+
+  .mtop80 {
+    margin-top: 20px;
+  }
+
+  .col-itemBox {
+    border-radius: 10px;
+    min-height: 280px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .subtitle-p {
+    padding: 10px 35px;
+    font-size: 0.95rem;
+  }
+
+  /* News and Events */
+
+  .section-title {
+    font-size: 2.1rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .newsImg {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pd50 {
+    padding: 10px 20px;
+  }
+
+  .titles-description {
+    font-size: 15px;
+  }
+
+  .txtFontSize {
+    font-size: 0.7rem;
+  }
+
+  /* Respaldo */
+  .respaldo-txt {
+    font-size: 0.8rem
+  }
+}
+
+@media (max-width: 425px) {
+  .titles-description {
+    font-size: 18px;
+  }
+
+  .txtFontSize {
+    font-size: 0.8rem;
+  }
+
+  .newSection {
+    padding: 0 20px;
+  }
+
+  .eventSection {
+    padding: 0 20px;
+  }
+
+  /* Respaldo */
+  .respaldo-txt {
+    display: none;
+  }
+
+  .respaldoSection {
+    padding: 50px 10px;
+  }
+
+  /* Contact */
+
+  .logo-contact {
+    display: none;
+  }
+}
