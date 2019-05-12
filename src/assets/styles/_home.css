@@ -1,6 +1,329 @@
+/* Header */
+.header {
+  height: 80px;
+}
+
 /* NavBar */
 .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
-    color: #1890ff;
-    border-bottom: 2px solid #95b71d
-     /* #1890ff; */
+  color: #95b71d;
+  border-bottom: 5px solid #95b71d; /* 1890ff */
+  font-weight: bold;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover {
+  color: #95b71d;
+  border-bottom: 3px solid #95b71d; /* 1890ff    #eee430*/
+  font-weight: bold;
+}
+
+/* style={{ lineHeight: '76px', float: 'right', color: '#fff' }} */
+.content-menu {
+  line-height: 76px;
+  float: right;
+  color: #fff;
+}
+
+/* style={{width: '80px', height: '80px'}} */
+
+.logo-menu {
+  width: 80px;
+  height: 80px;
+}
+/*Carousel*/
+.sliderSection {
+  /* height: 100vh; */
+  background: #133164;
+}
+
+.carousel-img {
+  /* height: 100vh; */
+  width: 100%;
+  height: auto;
+}
+
+.ant-carousel .slick-dots {
+  bottom: 50px;
+}
+
+/* Section Map*/
+.img--responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* Jati JatiDescription */
+.jatiDescriptionSection {
+  /* height: 100vh; */
+}
+
+.pd50 {
+  padding: 50px
+}
+
+.titles-description {
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 25px 0px;
+}
+
+.pdTopBtn20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.txtFontSize {
+  font-size: 1.01rem
+}
+
+.images-maxH {
+  max-height: 475px;
+}
+
+/* Why Jati */
+.whyJatiSection {
+  background-color: #1653bf;
+  height: 100vh;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.whyJatiSection h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  padding: 0px 15px;
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+.col-itemBox {
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  min-height: 350px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.whyJatiSection img {
+  margin: 15px 0;
+}
+
+.subtitle-p {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+}
+
+.col-itemBox-txt {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 25px;
+}
+
+/* New Events */
+.NewsEventsSection {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  padding: 0px 15px;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.newsImg {
+  padding: 20px 100px;
+}
+
+.subtitle-Events {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.centerDiv {
+  margin: 0 auto;
+  display: block;
+}
+
+.divBtnCenter{
+  margin: 40px 10px;
+}
+
+/* Respaldo */
+.respaldoSection {
+  padding: 50px;
+}
+
+.respaldoSlider {
+  padding: 30px 10px;
+}
+
+/* Contactanos */
+.contactSection {
+  background: #1653bf;
+  padding: 50px 0;
+}
+
+.complete-center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactForm {
+  padding: 30px 0;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 30px 0;
+}
+
+
+/* Media Querys */
+
+@media (max-width: 1024px) {
+  .pd50 {
+    padding: 30px 25px;
+  }
+
+  .titles-description {
+    margin: 10px 0;
+  }
+
+  .pdTopBtn20 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .txtFontSize {
+    font-size: 0.9rem;
+  }
+
+  /* whyJati */
+
+  .whyJatiSection {
+    height: auto;
+    padding: 70px 0;
+  }
+
+  .whyJatiSection h1 {
+    font-size: 2.1rem;
+    margin-bottom: 30px;
+    padding: 0px 15px;
+    margin-top: 0px;
+  }
+
+  .mtop80 {
+    margin-top: 20px;
+  }
+
+  .col-itemBox {
+    border-radius: 10px;
+    min-height: 280px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .subtitle-p {
+    padding: 10px 35px;
+    font-size: 0.95rem;
+  }
+
+  /* News and Events */
+
+  .section-title {
+    font-size: 2.1rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .newsImg {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pd50 {
+    padding: 10px 20px;
+  }
+
+  .titles-description {
+    font-size: 15px;
+  }
+
+  .txtFontSize {
+    font-size: 0.7rem;
+  }
+
+  /* Respaldo */
+  .respaldo-txt {
+    font-size: 0.8rem
+  }
+
+  /* Header Menu */
+  .content-menu {
+    float: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .titles-description {
+    font-size: 18px;
+  }
+
+  .txtFontSize {
+    font-size: 0.8rem;
+  }
+
+  .newSection {
+    padding: 0 20px;
+  }
+
+  .eventSection {
+    padding: 0 20px;
+  }
+
+  /* Respaldo */
+  .respaldo-txt {
+    display: none;
+  }
+
+  .respaldoSection {
+    padding: 50px 10px;
+  }
+
+  /* Contact */
+
+  .logo-contact {
+    display: none;
+  }
+
+  /* Header Menu */
+
+  .logo-menu {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header {
+    height: 55px;
+  }
+
+  .content-menu {
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .content-menu {
+    font-size: 12px;
+  }
 }

@@ -11,5 +11,33 @@ body {
 }
 
 .mainBlueBg{
-  background-color:  #1653bf
+  background-color:  #1653bf;
+}
+
+.txtBlue {
+  color: #1653bf;
+}
+
+.txtWhite {
+  color: #fff;
+}
+
+.txtGreen {
+  color: #95b71d;
+}
+
+.mtop80 {
+  margin-top: 80px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.txtGrey {
+  color: #858585;
+}
+
+.greenBg {
+  background-color: #95b71d;
 }
