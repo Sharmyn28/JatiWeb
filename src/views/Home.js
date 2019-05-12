@@ -16,13 +16,9 @@ import Contact from '../components/Contact'
 import logoJati from  '../assets/images/home/Jati-Logo.png'
 import map from '../assets/images/home/Seccion1-map.png'
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Footer } = Layout;
 
 const HomeLayout = () => {
-  const state = {
-    collapsed: false,
-  }
-
   return (
     <Layout className="layout">
 
@@ -37,7 +33,6 @@ const HomeLayout = () => {
                 mode="horizontal"
                 defaultSelectedKeys={['1']}
                 className = 'mainBlueBg content-menu'
-                defaultSelectedKeys={['1']}
               >
                 <Menu.Item key="1">CONOCENOS</Menu.Item>
                 <Menu.Item key="2">NOTICIAS Y EVENTOS</Menu.Item>

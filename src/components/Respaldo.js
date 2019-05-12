@@ -3,7 +3,7 @@ import { Carousel, Row, Col } from 'antd'
 import "antd/dist/antd.css"
 
 //importing images
-import respaldo1 from '../assets/images/home/respaldo/respaldo1.jpg'
+// import respaldo1 from '../assets/images/home/respaldo/respaldo1.jpg'
 import respaldo2 from '../assets/images/home/respaldo/respaldo2.jpg'
 
 const RespaldoSlider = () => {
