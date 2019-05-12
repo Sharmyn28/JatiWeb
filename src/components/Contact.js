@@ -1,6 +1,7 @@
 import React from 'react'
-import { Row, Col, Button, Form, Icon, Input } from 'antd'
+import { Row, Col, Button, Form, Input } from 'antd'
 import "antd/dist/antd.css"
+import { addMessage } from '../actions/actions'
 
 // importing images
 import logo from '../assets/images/home/Jati-Logo-big.png'
@@ -8,26 +9,45 @@ import logo from '../assets/images/home/Jati-Logo-big.png'
 const { TextArea } = Input
 
 const FormContact = () => {
+  // const {
+  //     getFieldDecorator, getFieldsError, getFieldError, isFieldTouched,
+  //   } = this.props.form;
+  let nameRef = React.createRef()
+  let lastnameRef = React.createRef()
+  let emailRef = React.createRef()
+  let numberRef = React.createRef()
+  let messageRef = React.createRef()
   return (
-    <Form  className="login-form contactForm">
+    <Form  className="login-form contactForm" method='post'
+      onSubmit={
+        e => {
+          e.preventDefault()
+          console.log('submit',e)
+          console.log('name?', nameRef.state.value, lastnameRef.state.value, emailRef.state.value, numberRef.state.value, messageRef.textAreaRef.value)
+
+          addMessage(nameRef.state.value, lastnameRef.state.value, emailRef.state.value, numberRef.state.value , messageRef.textAreaRef.value)
+        }
+      }
+    >
       <Form.Item>
         <Row>
           <Col xs={24} sm={24} md={{span: 11}} lg={{span: 11}} xl={{span: 11}}>
-            <Input type='text' placeholder="Nombre" />
+            <Input type='text' placeholder="Nombre" id='name' name='name' ref={e => nameRef = e} required/>
+
           </Col>
           <Col xs={24} sm={24} md={{span: 12, offset:1}} lg={{span: 12, offset:1}} xl={{span: 12, offset:1}}>
-            <Input type='text' placeholder='Apellido' />
+            <Input type='text' placeholder='Apellido' id='lastname' name='lastname' ref={e => lastnameRef = e} required/>
           </Col>
         </Row>
       </Form.Item>
       <Form.Item>
-        <Input type="email" placeholder="Correo electrónico" />
+        <Input type="email" placeholder="Correo electrónico" id='email' name='email' ref={e => emailRef = e} required />
       </Form.Item>
       <Form.Item>
-        <Input  type="number" placeholder="Celular" maxLength={9} />
+        <Input  type="number" placeholder="Celular" maxLength={9} id='number' name='number' ref={e => numberRef = e} required/>
       </Form.Item>
       <Form.Item>
-        <TextArea placeholder="Preguntas" autosize={{ minRows: 3, maxRows: 6 }} />
+        <TextArea placeholder="Preguntas" autosize={{ minRows: 3, maxRows: 6 }} id='message' name='message' ref={e => messageRef = e} required/>
       </Form.Item>
 
       <Form.Item>
@@ -64,44 +84,3 @@ const Contact = () => {
 }
 
 export default Contact
-//
-// <Form  className="login-form">
-//   <Form.Item>
-//     // {getFieldDecorator( {
-//     //   rules: [{ required: true, message: 'Please input your username!' }],
-//     // })(
-//     //   <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Nombre" />
-//     // )}
-//     <input  placeholder="Nombre" />
-//   </Form.Item>
-//   <Form.Item>
-//     // {getFieldDecorator( {
-//     //   rules: [{ required: true, message: 'Please input your Password!' }],
-//     // })(
-//     //   <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Correo electrónico" />
-//     // )}
-//       <input type="password" placeholder="Correo electrónico" />
-//   </Form.Item>
-//   <Form.Item>
-//     // {getFieldDecorator('phone', {
-//     //   rules: [{ required: true, message: 'Please input your Password!' }],
-//     // })(
-//     //   <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Celular" />
-//     // )}
-//     <input  type="password" placeholder="Celular" />
-//   </Form.Item>
-//   <Form.Item>
-//     // {getFieldDecorator('question', {
-//     //   rules: [{ required: true, message: 'Please input your Password!' }],
-//     // })(
-//     //   <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Preguntas" />
-//     // )}
-//     <input  type="password" placeholder="Preguntas" />
-//   </Form.Item>
-//
-//   <Form.Item>
-//     <Button type="primary" htmlType="submit" className="login-form-button">
-//       Log in
-//     </Button>
-//   </Form.Item>
-// </Form>
