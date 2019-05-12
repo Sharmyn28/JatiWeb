@@ -22,9 +22,6 @@ const FormContact = () => {
       onSubmit={
         e => {
           e.preventDefault()
-          console.log('submit',e)
-          console.log('name?', nameRef.state.value, lastnameRef.state.value, emailRef.state.value, numberRef.state.value, messageRef.textAreaRef.value)
-
           addMessage(nameRef.state.value, lastnameRef.state.value, emailRef.state.value, numberRef.state.value , messageRef.textAreaRef.value)
         }
       }

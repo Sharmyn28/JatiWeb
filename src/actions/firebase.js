@@ -15,7 +15,8 @@ const firebaseConfig = {
   projectId: "proyecto-jati",
   storageBucket: "proyecto-jati.appspot.com",
   messagingSenderId: "578783677861",
-  appId: "1:578783677861:web:c8d1006377586b3a"
+  appId: "1:578783677861:web:c8d1006377586b3a",
+  timestampsInSnapshots: true
 };
 
 // Initialize Firebase
@@ -23,7 +24,9 @@ firebase.initializeApp(firebaseConfig);
 
 export default firebase;
 
+export const firebaseapp = firebase
 export const database = firebase.database();
 export const auth = firebase.auth();
 export const storage = firebase.storage();
+export const store = firebase.firestore()
 export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
